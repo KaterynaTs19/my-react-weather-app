@@ -6,7 +6,7 @@ export default function App() {
       <h1>Weather app</h1>
       <p>
         This project was created by{" "}
-        <a href="" target="_blank">
+        <a href="https://jade-daifuku-97088b.netlify.app/" target="_blank">
           Katia Tsykanova
         </a>{" "}
         and is open-sourced on{" "}
