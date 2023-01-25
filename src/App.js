@@ -10,7 +10,10 @@ export default function App() {
           Katia Tsykanova
         </a>{" "}
         and is open-sourced on{" "}
-        <a href="" target="_blank">
+        <a
+          href="https://github.com/KaterynaTs19/my-react-weather-app"
+          target="_blank"
+        >
           GitHub
         </a>
       </p>
