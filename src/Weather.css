@@ -1,0 +1,8 @@
+.Weather {
+  margin: 50px auto 10px;
+  box-shadow: 0 8px 16px rgb(0 0 0 / 35%);
+  border-radius: 30px;
+  color: #3d6596;
+  padding: 70px 70px 55px;
+  font-family: "Montserrat", sans-serif, "Baloo 2", cursive;
+}
