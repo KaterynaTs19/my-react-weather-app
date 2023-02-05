@@ -45,11 +45,11 @@
 }
 .Weather .value-max,
 .Weather .units-max {
-  color: #79a4e7;
+  color: #fec9e5;
 }
 .Weather .value-min,
 .Weather .units-min {
-  color: #fec9e5;
+  color: #79a4e7;
 }
 .Weather .separator {
   font-size: 65px;
