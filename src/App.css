@@ -1,6 +1,6 @@
 .App {
   max-width: 700px;
-  margin: 20px;
+  margin: 20px auto;
 }
 .btn {
   width: 100%;
