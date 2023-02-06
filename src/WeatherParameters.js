@@ -1,5 +1,6 @@
 import React from "react";
 import CurrentDate from "./CurrentData";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherParameters(props) {
   return (
@@ -12,10 +13,9 @@ export default function WeatherParameters(props) {
         <p className="precipitation">overcast clouds</p>
         <div className="row">
           <div className="col-3 weather-icon-current">
-            <img
-              src={props.data.iconUrl}
+            <WeatherIcon
+              code={props.data.iconCode}
               alt={props.data.description}
-              className="img-icon"
             />
           </div>
           <div className="col-6 city-current">
