@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
+import CurrentDate from "./CurrentData";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      date: new Date(response.data.dt * 1000),
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
@@ -46,7 +48,7 @@ export default function Weather(props) {
         </div>
         <div className="city text-center">
           <p className="city-current-updated mb-3">
-            Last update: Monday, 13:55 PM
+            <CurrentDate date={weatherData.date} />
           </p>
           <h1 className="h1">{weatherData.city}</h1>
           <p className="precipitation">overcast clouds</p>
