@@ -7,6 +7,7 @@ export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   function handleResponse(response) {
+    console.log(response.data.sys.country);
     setWeatherData({
       ready: true,
       date: new Date(response.data.dt * 1000),
@@ -17,6 +18,7 @@ export default function Weather(props) {
       iconCode: response.data.weather[0].icon,
       // `images/${response.data.weather[0].icon}.png`
       city: response.data.name,
+      country: response.data.sys.country,
     });
   }
   function searchCity() {

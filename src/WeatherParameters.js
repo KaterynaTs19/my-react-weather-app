@@ -9,7 +9,9 @@ export default function WeatherParameters(props) {
         <p className="city-current-updated mb-3">
           <CurrentDate date={props.data.date} />
         </p>
-        <h1 className="h1">{props.data.city}</h1>
+        <h1 className="h1">
+          {props.data.city},{props.data.country}
+        </h1>
         <p className="precipitation">overcast clouds</p>
         <div className="row">
           <div className="col-3 weather-icon-current">
