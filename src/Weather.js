@@ -12,6 +12,7 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       date: new Date(response.data.dt * 1000),
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
@@ -36,7 +37,7 @@ export default function Weather(props) {
   }
   // when we submit the form - call the function "serchCity()"
 
-  function handleCityData(event) {
+  function handleCityName(event) {
     setCity(event.target.value);
   }
   // updating the city state
@@ -58,7 +59,7 @@ export default function Weather(props) {
                   placeholder="Enter city here..."
                   className="form-control"
                   autoFocus="on"
-                  onChange={handleCityData}
+                  onChange={handleCityName}
                 />
               </div>
               <div className="col-3">
@@ -71,7 +72,7 @@ export default function Weather(props) {
           </form>
         </div>
         <WeatherParameters data={weatherData} />
-        <WeatherForecast />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
