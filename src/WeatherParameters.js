@@ -4,7 +4,7 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherParameters(props) {
   return (
-    <div className="weather-parameters">
+    <div className="weather-parameters mb-5">
       <div className="city text-center">
         <p className="city-current-updated mb-3">
           <CurrentDate date={props.data.date} />
@@ -40,7 +40,6 @@ export default function WeatherParameters(props) {
             </ul>
           </div>
         </div>
-        <hr />
       </div>
     </div>
   );

@@ -1,3 +1,8 @@
 .WeatherForecast {
   text-align: center;
 }
+
+.WeatherForecast-day,
+.WeatherForecast-temp {
+  font-size: 15px;
+}
