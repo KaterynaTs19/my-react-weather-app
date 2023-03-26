@@ -13,7 +13,7 @@ export default function App() {
             target="_blank"
             rel="noreferrer"
           >
-            Katia Tsykanova
+            Kateryna Tsykanova
           </a>{" "}
           and is open-sourced on{" "}
           <a
